@@ -1,5 +1,10 @@
-import 'dotenv/config'
+import { config } from 'dotenv'
 import { z } from 'zod'
+
+// Validando qual variável de ambiente que será usada na rota
+if (process.env.NODE_ENV === 'test') {
+  config({ path: '.env.test' })
+}
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('production'), // Declarando node env, se não estiver declarada, por padrão será produção

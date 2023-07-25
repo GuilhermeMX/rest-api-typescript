@@ -4,6 +4,8 @@ import { z } from 'zod'
 // Validando qual variável de ambiente que será usada na rota
 if (process.env.NODE_ENV === 'test') {
   config({ path: '.env.test' })
+} else {
+  config()
 }
 
 const envSchema = z.object({

@@ -7,5 +7,5 @@
 # RN - Regras de negócios:
 
 - [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito, que subtrairá;
-- [ ] Deve ser possível identificarmos o usuário entre as requisiçoes;
-- [ ] O usuário só pode ver as transações que ele criou;
+- [x] Deve ser possível identificarmos o usuário entre as requisiçoes;
+- [x] O usuário só pode ver as transações que ele criou;
